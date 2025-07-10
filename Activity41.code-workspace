@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Desktop/Activity4"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"Chapter4",
+			"Activity4",
+			"Activity3",
+			"Activity1",
+			"Tasksheet1-2-1",
+			"src",
+			"."
+		],
+		"java.project.outputPath": "bin",
+		"java.project.referencedLibraries": []
+	}
+}
