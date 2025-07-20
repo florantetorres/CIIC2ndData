@@ -1,0 +1,19 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+public class Point {
+   private double x;
+   private double y;
+
+   public Point(double var1, double var3) {
+      this.x = var1;
+      this.y = var3;
+   }
+
+   public void print() {
+      System.out.println("(" + this.x + "," + this.y + ")");
+   }
+
+   public void scale() {
+      this.x /= 2.0;
+      this.y /= 2.0;
+   }
+}
