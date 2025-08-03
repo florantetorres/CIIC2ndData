@@ -1,0 +1,129 @@
+UML Class Diagram Representation
+
+@startuml
+class LogInUser {
+- userName: String
+- userPassword: String
++ getAuthentication(): String
+}
+class NewRegistry{
+- newEmpName: String
+- newEmpPosition: String
+- newEmpDepartment: String
+- newEmpUserName: String
+- newEmpPassword: String
+- newEmpIDnumber: Int
+}
+class School {
+- schoolName: String
+- location: String
++ getSchoolInfo(): String
+}
+class Department {
+- departmentName: String
+- departmentInCharge: String
++ getDepartmentInfo(): String
+}
+class AcademicDepartment{
+- subjects: List<String>
+- inCharge: List<String>
++ getInCharge(): List<String>
++ getSubjects(): List<String>
+}
+class EnglishDepartment extends AcademicDepartment{
+- englishTeachers: List<String>
++ getEnglishTeacher(): List<String>
+}
+class MathDepartment extends AcademicDepartment{
+- MathTeachers: List<String>
++ getMathTeacher(): List<String>
+}
+class APDepartment extends AcademicDepartment{
+- APTeachers: List<String>
++ getAPTeacher(): List<String>
+}
+class ScienceDepartment extends AcademicDepartment{
+- ScienceTeachers: List<String>
++ getScienceTeacher(): List<String>
+}
+class MapehDepartment extends AcademicDepartment{
+- MapehTeachers: List<String>
++ getMapehTeacher(): List<String>
+}
+class HEDepartment extends AcademicDepartment{
+- HETeachers: List<String>
++ getHETeacher(): List<String>
+}
+class ESPDepartment extends AcademicDepartment{
+- ESPTeachers: List<String>
++ getESPTeacher(): List<String>
+}
+class SHDepartment extends AcademicDepartment{
+- SHTeachers: List<String>
++ getSHTeacher(): List<String>
+}
+class AdministrationDepartment {
+- adminStaff: List<String>
++ getAdminStaff(): List<String>
+}
+class PrincipalDepartment {
+- principalName: List<String>
+- assPrincipalName: List<String>
++ getPrincipalName(): List<String>
++ getAssPrincipalName(): List<String>
+} 
+class MiscellaneousDepartment {
+- skillsPro: List<String>
+- inCharge: List<String>
++ getInCharge(): List<String>
++ getSkillsPro(): List<String>
+}
+class guardMiscellaneous extends MiscellaneousDepartment{
+- Guard: List<String>
++ getGuard(): List<String>
+}
+class ClinicMiscellaneous extends MiscellaneousDepartment{
+- Clinic: List<String>
++ getClinic(): List<String>
+}
+class LibraryMiscellaneous extends MiscellaneousDepartment{
+- Librarian: List<String>
++ getLibrarian(): List<String>
+}
+class CompLaboratoryMiscellaneous extends MiscellaneousDepartment{
+- IT: List<String>
++ getIT(): List<String>
+}
+class MaintenanceMiscellaneous extends MiscellaneousDepartment{
+- Maintainer: List<String>
++ getMaintainer(): List<String>
+}
+class JanitorialMiscellaneous extends MiscellaneousDepartment{
+- Janitor: List<String>
++ getJanitor(): List<String>
+}
+class MesshallMiscellaneous extends MiscellaneousDepartment{
+- Foodserver: List<String>
++ getFoodserver(): List<String>
+}
+School *-- Department
+Department <|-- AcademicDepartment
+AcademicDepartment <|-- EnglishDepartment
+AcademicDepartment <|-- MathDepartment
+AcademicDepartment <|-- APDepartment
+AcademicDepartment <|-- ScienceDepartment
+AcademicDepartment <|-- MAPEHDepartment
+AcademicDepartment <|-- HEDepartment
+AcademicDepartment <|-- ESPDepartment
+AcademicDepartment <|-- FilipinoDepartment
+AcademicDepartment <|-- SHDepartment
+Department <|-- AdministrationDepartment
+Department <|-- PrincipalDepartment
+Department <|-- GuardMiscellaneous
+Department <|-- ClinicMiscellaneous
+Department <|-- LibraryMiscellaneous
+Department <|-- CompLaboratoryMiscellaneous
+Department <|-- MaintenanceMiscellaneous
+Department <|-- JanitorialDepartment
+Department <|-- MesshallDepartment
+@enduml
